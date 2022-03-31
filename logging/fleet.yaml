@@ -4,7 +4,7 @@ helm:
   # go-getter URL supports adding a digest to validate the download. If repo
   # is set below this field is the name of the chart to lookup
   # chart: ./chart
-  chart: longhorn
+  chart: https://github.com/rancher/charts/blob/release-v2.6.3-patch1/assets/longhorn/longhorn-100.1.1%2Bup1.2.3.tgz
   # A https URL to a Helm repo to download the chart from. It's typically easier
   # to just use `chart` field and refer to a tgz file.  If repo is used the
   # value of `chart` will be used as the chart name to lookup in the Helm repository.
