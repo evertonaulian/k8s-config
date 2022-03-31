@@ -1,26 +1,21 @@
-
-# defaultNamespace: default
-
-# namespace: default
-
 helm:
   # Use a custom location for the Helm chart. This can refer to any go-getter URL.
   # This allows one to download charts from most any location.  Also know that
   # go-getter URL supports adding a digest to validate the download. If repo
   # is set below this field is the name of the chart to lookup
   # chart: ./chart
-  chart: longhorn
+  chart: logging
   # A https URL to a Helm repo to download the chart from. It's typically easier
   # to just use `chart` field and refer to a tgz file.  If repo is used the
   # value of `chart` will be used as the chart name to lookup in the Helm repository.
   repo: https://charts.rancher.io
   # A custom release name to deploy the chart as. If not specified a release name
   # will be generated.
-  releaseName: longhorn
+  releaseName: logging
 
   # The version of the chart or semver constraint of the chart to find. If a constraint
   # is specified it is evaluated each time git changes.
-  version: 100.1.2+up1.2.4
+  version: 100.1.1+up3.17.3
   # Any values that should be placed in the `values.yaml` and passed to helm during
   # install.
   # values:
@@ -34,4 +29,3 @@ helm:
   #   - values2.yaml
   # # Override immutable resources. This could be dangerous.
   # force: false
-
